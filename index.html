@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rental Issue Management</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top opaque-navbar">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">RentIssMan</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" >
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#how-it-works">How it works</a></li>
+          <li><a class="page-scroll" href="dashboard.html">Sign in</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <div class="container-fluid">
+
+    <header id="index-header">
+      <div id="glyphicons-main">
+        <i class="fa fa-home fa-5x" aria-hidden="true"></i>
+        <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
+      </div>
+      <div id="main-message">
+        <h1>Manage all your issues in one place</h1>
+        <p id="sub-main-message">(we mean... your rental issues)</p>
+      </div>
+      <hr class="colorgraph">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-12">
+            <div id="span-head">Tenant</div>
+            <div id="span-body">
+              <ul class="list-unstyled">
+                <li>Send live updates via pictures and videos</li>
+                <li>Maintain track record of all issues during your stay</li>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div id="span-head">Landlord</div>
+              <div id="span-body">
+                <ul class="list-unstyled">
+                  <li>Create a history of all issues during rental period</li>
+                  <li>Identify local vendors to resolve</li>
+                  <li>Manage your property centrally</li>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div id="sign-up-text">Sign up</div>
+              <form id="sign-up-form">
+                <div class="form-group">
+                  <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="address" id="address" class="form-control input-lg" placeholder="Rental Address" tabindex="2">
+                </div>
+
+                <div class="form-group">
+                  <button id="sign-up-button" type="submit" class="btn btn-success">Sign up!</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </header>
+
+        <secton>
+          <div id="how-it-works" class="row">
+            <h1>How it works</h1>
+            <hr class="colorgraph">
+            <p id="sub-main-message">
+              Issues arise even in the most perfect houses. Faucets leak, toilets clog, appliances break.
+              <br>
+              For managing these and others, introducing [company].
+            </p>
+            <div class="col-md-4 col-xs-12 custom-padding">
+              <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+              <p>Invite tenant to submit initial walk-thru details.</p>
+            </div>
+            <div class="col-md-4 col-xs-12 custom-padding">
+              <i class="fa fa-comments-o fa-3x" aria-hidden="true"></i>
+              <p>Chat and maintain log of all issues during rental.</p>
+            </div>
+            <div class="col-md-4 col-xs-12 custom-padding">
+              <i class="fa fa-wrench fa-3x" aria-hidden="true"></i>
+              <p>Connect with local handy men and solve problem.</p>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+    </body>
+    </html>

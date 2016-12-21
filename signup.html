@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Sign up</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/signup-style.css" />
+
+  <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+  <!-- Using app.js for this page -->
+  <script src="js/signup-app.js"></script>
+
+</head>
+<body>
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top opaque-navbar">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">RentIssMan</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" >
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="page-scroll" href="dashboard.html">Sign in</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div class="container-fluid">
+  <form id="register-form" method="post">
+    <div class="form-group">
+      <input type="text" name="first_name" id="first_name" tabindex="1" class="form-control" placeholder="First Name" value="">
+    </div>
+    <div class="form-group">
+      <input type="text" name="last_name" id="last_name" tabindex="2" class="form-control" placeholder="Last Name" value="">
+    </div>
+    <div class="form-group">
+      <input type="text" name="address" id="address" tabindex="3" class="form-control" placeholder="Rental Address" value="">
+    </div>
+    <div class="form-group">
+      <input type="text" name="username" id="username" tabindex="4" class="form-control" placeholder="Username" value="">
+    </div>
+    <div class="form-group">
+      <input type="password" name="password" id="password" tabindex="5" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input type="password" name="confirm-password" id="confirm-password" tabindex="6" class="form-control" placeholder="Confirm Password">
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" id="email" tabindex="7" class="form-control" placeholder="Email Address" value="">
+      <div>so you can get notified on issues and status (not for marketing)</div>
+    </div>
+
+    <hr class="colorgraph">
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <input type="submit" name="register-submit" id="register-submit" tabindex="8" class="form-control btn btn-success" value="Complete Sign Up">
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+
+
+</body>
+</html>
